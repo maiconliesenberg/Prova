@@ -212,10 +212,6 @@
     <Compile Include="Migrations\201709262319122_InitialModel.Designer.cs">
       <DependentUpon>201709262319122_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201709262349160_AlunosBanco.cs" />
-    <Compile Include="Migrations\201709262349160_AlunosBanco.Designer.cs">
-      <DependentUpon>201709262349160_AlunosBanco.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Alunos.cs" />
@@ -310,9 +306,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709262319122_InitialModel.resx">
       <DependentUpon>201709262319122_InitialModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201709262349160_AlunosBanco.resx">
-      <DependentUpon>201709262349160_AlunosBanco.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
