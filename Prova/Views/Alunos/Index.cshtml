@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Prova.Models.Alunos>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Alunos</h2>
+
+@if (@Model.Count() > 0)
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Faixa</th>
+                <th>TipoDeAssociacao</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var alunos in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(@alunos.Nome, "Detalhes", new { alunos.Id })</td>
+                    <td>@alunos.CPF</td>
+                    <td>@alunos.Faixa.Name</td>
+                    <td>@alunos.TipoDeAssociacao.Nome</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Não tem cliente ainda!</p>
+}

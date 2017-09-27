@@ -20,6 +20,10 @@ namespace Prova.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
+        public DbSet<Faixa> Faixa { get; set; }
+        public DbSet<Alunos> Alunos { get; set; }
+        public DbSet<TipoDeAssociacao> TipoDeAssociacao { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
